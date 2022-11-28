@@ -9,20 +9,21 @@
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
             <div class="row g-3">
                 <h3>Add Friends</h3>
+                <p>{{name}}</p>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12- col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Friend Name</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" name="" id="" class="form-control">
                 </div>  
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Describe Your Friend</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input name="  friendNickName" [(ngModel)]="friendNickName" type="text" name="" id="" class="form-control">
                 </div>  
                  <div class="col-12 col-sm-12 col-md-12 col-lg-12- col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Friend Nickname</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" type="text" name="" id="" class="form-control">
                 </div>  
                  <div class="col-12 col-sm-12 col-md-12 col-lg-12- col-xl-12 col-xxl-12">
-                   <button class="btn btn-primary">Add</button>
+                   <button (click)="readValue()" class="btn btn-primary">Add</button>
                 </div>  
             </div>
         </div>

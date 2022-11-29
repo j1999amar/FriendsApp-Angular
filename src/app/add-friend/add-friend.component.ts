@@ -12,8 +12,7 @@ export class AddFriendComponent {
 
   readValue= () =>
   {
-   let data:any=[{"_id":"628613a5fb68dd10d6f53366","name":this.name,"friendNickName":this.friendNickName,"DescribeYourFriend":this.DescribeYourFriend}]
-  console.log(data)
+   let data:any=[]
   }
   
 }
